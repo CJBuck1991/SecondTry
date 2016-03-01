@@ -20,7 +20,7 @@ if __name__ == "__main__":
     print("system value of pi is")
     print("%13.11f" % math.pi)
     print("system value of pi-squared is")
-    print("%23.21f" % math.pi*math.pi)
+    print("%23.21f" % (math.pi*math.pi))
     print(" ")
     print("Comparing 10000000 terms for Pisquare using integer vs float")
     z=pifun(10000000)
