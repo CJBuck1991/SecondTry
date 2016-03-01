@@ -9,4 +9,4 @@ def pifun(n): # Euler series
 if __name__ == "__main__":
     print("Number_of_Terms   Estimate")
     for n in (100,200,500,1000,2000,5000,10000,20000,50000,100000):
-        print("10u%          13.11f%" % (n,pifun(n))   
+        print("10u%          13.11f%" % (n,pifun(n)))   
