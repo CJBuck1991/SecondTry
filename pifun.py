@@ -6,10 +6,12 @@ def pifun(n): # Euler series
         pisqest+=6/(i*i) # add each series term
     return math.sqrt(pisqest) # take square root
     
-def piintfun(n):
+def piintfun(n):  #integer arithmetic in python has arbitrary precision
     pisqest=0;
     for i in range(1,n+1):
         pisqest+=6000000000000000000000//(i*i)
+        if 2*(6000000000000000000000%(i*i)) >= i*i: 
+            pisqest+=1  #add one if remainder more than half of denom
     return pisqest    
     
 if __name__ == "__main__":
@@ -22,7 +24,7 @@ if __name__ == "__main__":
     print("system value of pi-squared is")
     print("%23.21f" % (math.pi*math.pi))
     print(" ")
-    print("Comparing 10000000 terms for Pisquare using integer vs float")
-    z=pifun(10000000)
-    zz=piintfun(10000000)
+    print("Comparing 1000000000 terms for Pisquare using integer vs float")
+    z=pifun(1000000000)
+    zz=piintfun(1000000000)
     print("%23.21f       \n %22u" % (z*z,zz))
