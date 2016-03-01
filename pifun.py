@@ -25,4 +25,4 @@ if __name__ == "__main__":
     print("Comparing 10000000 terms for Pisquare using integer vs float")
     z=pifun(10000000)
     zz=piintfun(10000000)
-    print("%23.21f       \n%22u" % (z*z,zz))
+    print("%23.21f       \n %22u" % (z*z,zz))
