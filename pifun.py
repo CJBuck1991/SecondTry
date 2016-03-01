@@ -1,4 +1,4 @@
-import module math # needed for square root function
+import math # needed for square root function
 
 def pifun(n): # Euler series
     pisqest=0.000 # initialize cumulative sum for pi^2
